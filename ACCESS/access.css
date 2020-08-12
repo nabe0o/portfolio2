@@ -1,4 +1,7 @@
 @charset "UTF-8";
+html {
+    overflow-x: hidden;
+}
 header{
     background: url("../img/pastas-1150032_1920.jpg")repeat center/cover;;
     height: 10vw;
