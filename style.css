@@ -1,0 +1,58 @@
+@charset "UTF-8";
+header{
+    height: 10vw;
+    width: 100vw;
+    background-image: url("img/mediterranean-cuisine-2378758_1920.jpg");
+   }
+
+* {
+    margin: 0;
+}
+
+.example{
+    padding-left:  10%;
+    text-decoration: underline;
+
+}
+
+.heading02 {
+     float: left;
+     text-decoration: underline;
+ }
+
+ .heading02 img{
+     height: 40vw;
+     width:　auto;
+ }
+
+
+
+.heading01{
+    text-align: right; /*右揃え*/
+    padding-right: 10%; /*空欄幅*/
+    line-height: 7; /*文字幅*/
+    font-size: 2.1rem;
+}
+
+
+    a {   /*ホバー*/
+        position: relative;
+        display: block;
+        text-decoration: none;
+        color: #333;
+      }
+      a::after {
+        position: absolute;
+        bottom: -4px;
+        left: 60%;
+        content: '';
+        width: 40%;
+        height: 2px;
+        background: #333;
+        transform: scale(0, 1);
+        transform-origin: right top;
+        transition: transform .3s;
+      }
+      a:hover::after {
+        transform: scale(1, 1);
+      }

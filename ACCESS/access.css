@@ -1,0 +1,75 @@
+@charset "UTF-8";
+header{
+    background: url("../img/pastas-1150032_1920.jpg")repeat center/cover;;
+    height: 10vw;
+}
+*{
+    margin: 0;
+}
+
+
+.globalnav li{
+    display: table-cell;
+    text-align: center;
+  }
+  
+  .globalnav-list {
+    width: 100%;
+    max-width: 0 auto;
+    display: table;
+    table-layout: fixed;
+  }
+  
+  .heading02{
+    text-align: center;
+    margin-top: 3%;
+    padding-top: 1%;
+    color: white;
+    text-decoration: underline;
+  }
+  
+  a {   /*ホバー*/
+    position: relative;
+    display: block;
+    text-decoration: none;
+    color: #333;
+  }
+  a::after {
+    position: absolute;
+    bottom: -4px;
+    left: 30%;
+    content: '';
+    width: 40%;
+    height: 2px;
+    background: #333;
+    transform: scale(0, 1);
+    transform-origin: right top;
+    transition: transform .3s;
+  }
+  a:hover::after {
+    transform: scale(1, 1);
+  }
+
+  @media print,screen and (min-width: 768px) {
+      .access-block {
+          display: -webkit-flex;
+          display: -ms-flexbox;
+          display: flex;
+          justify-content: center;
+          margin-bottom: 40px;
+      }
+  }
+  
+  .map {
+      position: fixed;
+      display: fixed;
+      width: 40%;
+      height: 40%;
+      bottom: 30%;
+  }
+
+  .map iframe {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+  }
